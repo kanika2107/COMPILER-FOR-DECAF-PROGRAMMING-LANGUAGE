@@ -1,0 +1,7 @@
+output of flex scanner generator
+TO RUN:
+rm flex_output.txt
+flex snazzle.l
+g++ lex.yy.c -lfl -o snazzle
+./snazzle >> flex_output.txt
+vimdiff flex_output.txt flex_output1.txt
